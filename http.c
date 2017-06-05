@@ -12,6 +12,7 @@ int main(int argc,char *args[])
     char *host = args[1];
     int portno = atoi(args[2]);
     char *params = args[3];
+    
     struct hostent *server;
     struct sockaddr_in serv_addr;
     int sockfd, bytes, sent, received, total, message_size;
